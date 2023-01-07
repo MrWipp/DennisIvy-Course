@@ -10,10 +10,11 @@
     <a href="/">
         <h1>LOGO</h1>
     </a>
-    <hr>
     <form method="GET" action="{% url 'home' %}">
         <input type="text" name="q" placeholder="Search Rooms..."/>
     </form>
+    <a href="{% url 'login-register' %}">Login</a>
+    <hr>
     {% block content %} 
     {% endblock %}
 
