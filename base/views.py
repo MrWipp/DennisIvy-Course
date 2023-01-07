@@ -63,9 +63,6 @@ def room(request, pk):
 def createRoom(request):
     form = RoomForm()
 
-    if request.user != room.host:
-        return HttpResponse('You are not allowed here!!!!!')
-
     if request.method == 'POST':
         form = RoomForm(request.POST)
         if form.is_valid():
