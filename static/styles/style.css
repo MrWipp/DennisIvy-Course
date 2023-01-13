@@ -99,6 +99,11 @@ a {
   color: var(--color-dark);
 }
 
+.btn--main--danger {
+  background-color: var(--color-main);
+  color: var(--color-light);
+}
+
 .btn:hover {
   opacity: 0.9;
 }
