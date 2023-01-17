@@ -8,7 +8,7 @@ class User(AbstractUser):
 
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = []
-    avatar = models.ImageField()
+    avatar = models.ImageField(null=True, default='avatar.svg')
 
 
 # Create your models here.
